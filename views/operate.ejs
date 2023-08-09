@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts CRUD</title>
+</head>
+<body>
+    <h1>Contacts CRUD</h1>
+
+    <h2>Create Contact</h2>
+    <form id="createContactForm">
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="email" placeholder="Email">
+        <input type="text" id="phone" placeholder="phone no.">
+        <button type="submit">Create Contact</button>
+    </form>
+
+    <h2>Read Contact</h2>
+    <form id="readContactForm">
+        <input type="text" id="contactIdRead" placeholder="Contact ID">
+        <button type="submit">Read Contact</button>
+    </form>
+    <div id="readResult"></div>
+
+    <h2>Read All Contacts</h2>
+    <button id="readAllContacts">Read All Contacts</button>
+    <div id="readAllResult"></div>
+
+    <h2>Update Contact</h2>
+    <form id="updateContactForm">
+        <input type="text" id="contactIdUpdate" placeholder="Contact ID">
+        <input type="text" id="newName" placeholder="New Name">
+        <input type="text" id="newEmail" placeholder="New Email">
+        <input type="text" id="phone" placeholder="Phone no.">
+        <button type="submit">Update Contact</button>
+    </form>
+
+    <h2>Delete Contact</h2>
+    <form id="deleteContactForm">
+        <input type="text" id="contactIdDelete" placeholder="Contact ID">
+        <button type="submit">Delete Contact</button>
+    </form>
+
+    <script src="/cjs/crud.js" data-token="<%= token %>"></script>
+    
+</body>
+</html>

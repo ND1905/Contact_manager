@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LogedIn</title>
+  </head>
+  <body>
+    <h2>Let's Go</h2>
+
+    <button type="submit" id="auth">Current User</button>
+
+    <div id="user-info">
+      
+    </div>
+
+    <form action="/crud" method="post">
+      <button type="submit" name="pass" value="<%= token %>">Manage Contacts</button>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="/cjs/cindex.js" data-token="<%= token %>"></script>
+  </body>
+</html>
